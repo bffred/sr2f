@@ -9,6 +9,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class HomeController extends AbstractController
 {
 
+    
     /**
      * @Route("/", name="home")
      * @return Response
@@ -18,4 +19,18 @@ class HomeController extends AbstractController
     {
         return $this->render('pages/home.html.twig');
     }
+
+
+
+    /**
+     * @Route("/Portail_Pro", name="Portail_Pro")
+     * @return Response
+     */
+
+    public function Portail_Pro(): Response
+    {
+        return $this->render('pages/portail.pro.html.twig');
+    }
+
+
 }

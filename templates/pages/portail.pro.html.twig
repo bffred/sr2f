@@ -1,0 +1,164 @@
+{% extends 'base.html.twig' %}
+{% block nav %}<!-- Header_Area -->
+	<nav class="navbar navbar-default header_aera" id="main_navbar">
+        <div class="container-fluid">
+            <!-- searchForm -->
+            <div class="searchForm">
+                <form action="#" class="row m0">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                        <input type="search" name="search" class="form-control" placeholder="Rechercher ...">
+                        <span class="input-group-addon form_hide"><i class="fa fa-times"></i></span>
+                    </div>
+                </form>
+            </div><!-- End searchForm -->
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="col-md-2 p0">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#min_navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="col-md-12 p0">
+                <div class="collapse navbar-collapse" id="min_navbar">
+                    <ul class="nav navbar-nav navbar-left">
+                        <li class="dropdown submenu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Home</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="index-2.html">Home 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown submenu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">About Us</a>
+                            <ul class="dropdown-menu other_dropdwn">
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="about-2.html">About Us-2</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown submenu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services</a>
+                            <ul class="dropdown-menu other_dropdwn">
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="services-2.html">Services-2</a></li>
+                            </ul>
+                        
+                        <li><a href="#">Gallery</a>
+                            <ul class="dropdown-menu other_dropdwn">
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="services-2.html">Services-2</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown submenu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="blog-2.html">Blog-2</a></li>
+                            </ul>
+                        </li>
+                            <li><a href="/login">Admin</a></li>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown submenu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Connection</b> <span class="caret"></span></a>
+                            <ul id="login-dp" class="dropdown-menu">
+                                <li>
+                                    <div class="row">
+                                            <div class="col-md-12">
+                                                <p>Connection avec :</p>
+                                                <div class="social-buttons">
+                                                    <a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
+                                                    <a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
+                                                </div>
+                                                <p>ou</p>
+                                                <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+                                                        <div class="form-group">
+                                                            <label class="sr-only" for="exampleInputEmail2">Email</label>
+                                                            <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email" required>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="sr-only" for="exampleInputPassword2">Mot de passe</label>
+                                                            <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Mot de passe" required>
+                                                            <div class="help-block text-right"><a href="">Mot de passe oublié ?</a></div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <button type="submit" class="btn btn-primary btn-block">Connection</button>
+                                                        </div>
+                                                        <div class="checkbox">
+                                                            <label>
+                                                            <input type="checkbox"> Rester connecter
+                                                            </label>
+                                                        </div>
+                                                </form>
+                                            </div>
+                                            <div class="bottom text-center">
+                                                <a href="#"><b>Crée un compte</b></a>
+                                            </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div><!-- /.container -->
+    </nav>
+    {% endblock %}
+    {% block slider %}      
+    <section class="slider_area row m0">
+        <div class="row">
+            <div class="col-md-6 -sm-6">
+                <div class="slider_inner">
+                    <div data-thumb="{{ asset('build/images/slider-1.jpg') }}" data-src="{{ asset('build/images/slider-1.jpg') }}">
+                        <div class="camera_caption">
+                        <div class="container">
+                                <h5 class=" wow fadeInUp animated">Welcome to our</h5>
+                                <h3 class=" wow fadeInUp animated" data-wow-delay="0.5s">CLEAN, MODERN, MULTIPURPOSE THEME</h3>
+                                <p class=" wow fadeInUp animated" data-wow-delay="0.8s">Our team of professionals will help you turn your dream home or flat into a reality fast. The Love Boat promises something for everyone. Now the world don't move to the beat of just one</p>
+                                <a class=" wow fadeInUp animated" data-wow-delay="1s" href="#">Read More</a>
+                        </div>
+                        </div>
+                    </div>
+                    <div data-thumb="{{ asset('build/images/slider-2.jpg') }}" data-src="{{ asset('build/images/slider-2.jpg') }}">
+                        <div class="camera_caption">
+                        <div class="container">
+                                <h5 class=" wow fadeInUp animated">Welcome to our</h5>
+                                <h3 class=" wow fadeInUp animated" data-wow-delay="0.5s">CLEAN ,MODERN, MULTIPURPOSE THEME</h3>
+                                <p class=" wow fadeInUp animated" data-wow-delay="0.8s">Our team of professionals will help you turn your dream home or flat into a reality fast. The Love Boat promises something for everyone. Now the world don't move to the beat of just one</p>
+                                <a class=" wow fadeInUp animated" data-wow-delay="1s" href="#">Read More</a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 -sm-6">
+                <br>
+                <center><h1>L'article à la une du jour</h1></center>
+            </div>
+        </div>
+    </section>
+    {% endblock %}
+    {% block professional_builder %}{% endblock %}
+    {% block about %}{% endblock %}
+    {% block what %}{% endblock %}
+    {% block feature %}{% endblock %}
+    {% block services %}{% endblock %}
+    {% block team %}{% endblock %}
+    {% block achievments %}{% endblock %}
+    {% block testimonial %}{% endblock %}
+    {% block featured %}{% endblock %}
+    {% block blog %}{% endblock %}
+    {% block partners %} {% endblock %}
+    {% block scroll %}{% endblock %}
+
+
